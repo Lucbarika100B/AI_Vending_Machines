@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grab-n-Go AI | Smart Vending Solutions for Toronto Businesses</title>
+    <meta name="description" content="AI-powered smart fridges for offices, condos, gyms, and more. Free installation with real-time inventory tracking and cashless payments.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0077FF',
+                        secondary: '#2ED573',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-white">
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section -->
+    <section class="relative bg-gray-50 py-20 overflow-hidden">
+        <div class="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2 z-10">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                    From <span class="text-primary">Vending</span> to <span class="text-secondary">Experience</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Offer your employees or tenants a smart, healthy and cashless food experience — 100% free installation.
+                </p>
+                <a href="#contact" class="bg-primary hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-full transition duration-300 shadow-lg">
+                    Request a Free Smart Fridge
+                </a>
+            </div>
+<div class="lg:w-3/5 relative">  <!-- Changé de 1/2 à 3/5 = 60% au lieu de 50% -->
+    <div class="relative rounded-2xl overflow-hidden shadow-2xl" style="padding-bottom: 56.25%; height: 0;">
+        <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/USwysq7qKz4?autoplay=1&mute=1&loop=1&playlist=USwysq7qKz4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 lg:px-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">
+                We Don't Install Vending Machines — <span class="text-primary">We Create Experiences</span>.
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2973/2973303.png" alt="AI Icon" class="w-8 h-8">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Smart & Connected</h3>
+                    <p class="text-gray-600">Real-time inventory tracking and AI monitoring</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-green-50 rounded-xl flex items-center justify-center mb-6">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046769.png" alt="Health Icon" class="w-8 h-8">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Healthy & Fresh</h3>
+                    <p class="text-gray-600">Balanced snacks and beverages for better productivity</p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2489/2489526.png" alt="Payment Icon" class="w-8 h-8">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Fast & Cashless</h3>
+                    <p class="text-gray-600">Tap, grab, and go in seconds</p>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-green-50 rounded-xl flex items-center justify-center mb-6">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2838/2838694.png" alt="Free Icon" class="w-8 h-8">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Zero Cost Setup</h3>
+                    <p class="text-gray-600">Free installation, restocking, and maintenance</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <img src="images/grab-close.jpg" alt="Smart Fridge Interface" class="rounded-2xl shadow-lg mx-auto max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 lg:px-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">
+                Perfect for <span class="text-primary">Your Space</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Office -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/Micromart-Offices.jpg" alt="Office Fridge" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-900">Offices</h3>
+                        <p class="text-gray-600">Keep your team energized with 24/7 access to snacks and drinks</p>
+                    </div>
+                </div>
+                
+                <!-- Condos -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/Micromart-Residential.jpg" alt="Condo Fridge" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-900">Condos</h3>
+                        <p class="text-gray-600">Premium amenity that residents love</p>
+                    </div>
+                </div>
+                
+                <!-- Gyms -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/Micromart-Gym.jpg" alt="Gym Fridge" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-900">Gyms</h3>
+                        <p class="text-gray-600">Post-workout recovery drinks and healthy snacks</p>
+                    </div>
+                </div>
+                
+                <!-- Schools -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/Micromart-School.jpg" alt="School Fridge" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-900">Schools</h3>
+                        <p class="text-gray-600">Healthy options for students and faculty</p>
+                    </div>
+                </div>
+                
+                <!-- Warehouses -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/MicroMarket.jpg" alt="Warehouse Fridge" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-900">Warehouses</h3>
+                        <p class="text-gray-600">Convenient food access for shift workers</p>
+                    </div>
+                </div>
+                
+                <!-- Other -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
+                        <div class="text-center p-6">
+                            <h3 class="text-xl font-bold mb-2 text-white">Other Spaces</h3>
+                            <p class="text-white">We customize solutions for any environment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 lg:px-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">
+                Simple Setup — <span class="text-primary">Big Impact</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-primary text-3xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Request</h3>
+                    <p class="text-gray-600">Fill out our simple form</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-primary text-3xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Install</h3>
+                    <p class="text-gray-600">We handle everything, 100% free</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-primary text-3xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Enjoy</h3>
+                    <p class="text-gray-600">24/7 access to fresh options</p>
+                </div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto bg-blue-50 rounded-2xl p-6 text-center">
+                <p class="text-gray-700">
+                    <span class="font-bold">AI-Powered Freshness:</span> Each machine uses AI sensors and a smart lock for freshness and security.
+                </p>
+            </div>
+            
+            <div class="mt-16">
+                <img src="images/smart-fridge.jpg" alt="Fridge Interior" class="rounded-2xl shadow-lg mx-auto w-full max-w-4xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Gallery -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 lg:px-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">
+                See Grab-n-Go AI <span class="text-primary">in Action</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="images/01.jpg" alt="Full Fridge System" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="images/payment.jpg" alt="Snacks Section" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="images/door-open.jpg" alt="Drinks Section" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="images/Lobby 1200 542.jpg" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="images/many-doors.jpg" alt="Payment Interface" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="images/Library 1200 542.jpg" alt="All Doors Open" class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 lg:px-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">
+                Trusted by Workplaces and Properties <span class="text-primary">Across Toronto</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/1" alt="Testimonial" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Chen</h4>
+                            <p class="text-gray-500 text-sm">Office Manager</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "Our employees love the convenience. No more vending machine frustrations."
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/2" alt="Testimonial" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Mike Rodriguez</h4>
+                            <p class="text-gray-500 text-sm">Warehouse Supervisor</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "The smart fridge has boosted morale and reduced downtime. Worth every penny... except we didn't pay any!"
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/3" alt="Testimonial" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Jennifer Park</h4>
+                            <p class="text-gray-500 text-sm">Property Manager</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "Residents constantly ask when we're getting more. It's become a building amenity."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-20 bg-gradient-to-r from-primary to-secondary">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+                <div class="flex flex-col lg:flex-row">
+                    <div class="lg:w-1/2 p-12">
+                        <h2 class="text-3xl font-bold mb-6 text-gray-900">
+                            Get Your Smart Machine Installed — <span class="text-primary">100% Free</span>
+                        </h2>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Full Name*</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="company" class="block text-gray-700 mb-2">Company/Building Name*</label>
+                                <input type="text" id="company" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email*</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 mb-2">Phone*</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="space" class="block text-gray-700 mb-2">Type of Space*</label>
+                                <select id="space" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">Select your space type</option>
+                                    <option value="office">Office</option>
+                                    <option value="condo">Condo</option>
+                                    <option value="gym">Gym</option>
+                                    <option value="school">School</option>
+                                    <option value="warehouse">Warehouse</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="employees" class="block text-gray-700 mb-2">Number of Employees/Residents</label>
+                                <input type="number" id="employees" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300 shadow-lg">
+                                Request My Free Smart Fridge
+                            </button>
+                        </form>
+                    </div>
+                    <div class="lg:w-1/2 hidden lg:block bg-gray-100">
+                        <img src="images/condominium.jpg" alt="Contact Fridge" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">Grab-n-Go AI</h2>
+                    <p class="text-gray-400 mt-2">From Vending to Experience</p>
+                </div>
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-lg font-semibold mb-3">Contact</h3>
+                    <p class="text-gray-400">info@grabngo.ai</p>
+                    <p class="text-gray-400">(416) 123-4567</p>
+                    <p class="text-gray-400">Toronto, ON</p>
+                </div>
+                <div class="flex space-x-4 mb-6 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-6 h-6">
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn" class="w-6 h-6">
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="w-6 h-6">
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="flex space-x-4 mb-4 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Careers</a>
+                </div>
+                <p class="text-gray-400">© 2025 Grab-n-Go AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
