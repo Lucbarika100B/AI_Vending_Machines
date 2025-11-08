@@ -463,5 +463,11 @@
 
     <script src="components/navbar.js"></script>
     <script src="script.js"></script>
+    <script>
+        window.addEventListener('unload', () => {
+            document.querySelector('form').reset();
+        });
+</script>
+
 </body>
 </html>
