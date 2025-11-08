@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Grab-n-Go AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0077FF',
+                        secondary: '#2ED573',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes checkmark {
+            0% { stroke-dashoffset: 100; }
+            100% { stroke-dashoffset: 0; }
+        }
+        .checkmark-circle {
+            stroke-dasharray: 166;
+            stroke-dashoffset: 166;
+            animation: checkmark 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+        }
+        .checkmark-check {
+            stroke-dasharray: 48;
+            stroke-dashoffset: 48;
+            animation: checkmark 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.6s forwards;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen flex items-center justify-center p-6">
+    
+    <div class="max-w-2xl w-full">
+        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 text-center">
+            
+            <!-- Checkmark -->
+            <svg class="w-20 h-20 mx-auto mb-6" viewBox="0 0 52 52">
+                <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none" stroke="#2ED573" stroke-width="2"/>
+                <path class="checkmark-check" fill="none" stroke="#2ED573" stroke-width="3" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+            </svg>
+
+            <!-- Message -->
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                Thank You for your interest!
+            </h1>
+            
+            <p class="text-lg text-gray-700 mb-6">
+                Your request has been successfully received.
+            </p>
+            
+            <div class="bg-blue-50 rounded-xl p-6 mb-8">
+                <p class="text-gray-800">
+                    <strong class="text-primary">We'll contact you within 24 hours</strong> to discuss your smart vending solution.
+                </p>
+            </div>
+
+            <!-- Contact -->
+            <div class="border-t border-gray-200 pt-6 mb-6">
+                <p class="text-sm text-gray-600 mb-4">Questions? Reach us directly:</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center text-sm">
+                    <a href="mailto:sales.vending.machine.ai@gmail.com" class="text-primary hover:text-blue-600 font-medium">
+                        sales.vending.machine.ai@gmail.com
+                    </a>
+                    <span class="hidden sm:inline text-gray-300">|</span>
+                    <a href="tel:+15148355344" class="text-primary hover:text-blue-600 font-medium">
+                        1 (514) 835-5344
+                    </a>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <a href="index.html" class="inline-block bg-gradient-to-r from-primary to-secondary hover:from-blue-600 hover:to-green-500 text-white font-semibold py-3 px-8 rounded-full transition duration-300 shadow-lg hover:shadow-xl">
+                Back to Homepage
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>

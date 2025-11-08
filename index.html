@@ -304,70 +304,135 @@
         </div>
     </section>
 
-    <!-- Contact Form -->
-    <form action="https://formspree.io/f/xqawzayz" method="POST"> 
-    <section id="contact" class="py-20 bg-gradient-to-r from-primary to-secondary">
-        <div class="container mx-auto px-6 lg:px-12">
-            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
-                <div class="flex flex-col lg:flex-row">
-                    <div class="lg:w-1/2 p-12">
-                        <h2 class="text-3xl font-bold mb-6 text-gray-900">
-                            Get Your Smart Machine Installed — <span class="text-primary">100% Free</span>
-                        </h2>
-                        <form class="space-y-4">
-                            <div>
-                                <label for="name" class="block text-gray-700 mb-2">Full Name*</label>
-                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                            </div>
-                            <div>
-                                <label for="company" class="block text-gray-700 mb-2">Company/Building Name*</label>
-                                <input type="text" id="company" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                            </div>
-                            <div>
-                                <label for="email" class="block text-gray-700 mb-2">Email*</label>
-                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                            </div>
-                            <div>
-                                <label for="phone" class="block text-gray-700 mb-2">Phone*</label>
-                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                            </div>
-                            <div>
-                                <label for="address" class="block text-gray-700 mb-2">Full Address*</label>
-                                <input type="text" id="address" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                            </div>
-                            <div>
-                                <label for="space" class="block text-gray-700 mb-2">Type of Space*</label>
-                                <select id="space" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                                    <option value="">Select your space type</option>
-                                    <option value="office">Office</option>
-                                    <option value="condo">Condo</option>
-                                    <option value="gym">Gym</option>
-                                    <option value="school">School</option>
-                                    <option value="warehouse">Warehouse</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="employees" class="block text-gray-700 mb-2">Number of Employees/Residents</label>
-                                <input type="number" id="employees" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                            </div>
-                            <div>
-                                <label for="message" class="block text-gray-700 mb-2">Message</label>
-                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
-                            </div>
-                            <button type="submit" class="w-full bg-primary hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300 shadow-lg">
-                                Request My Free Smart Fridge
-                            </button>
-                        </form>
-                    </div>
-                    <div class="lg:w-1/2 hidden lg:block bg-gray-100">
-                        <img src="images/condominium.jpg" alt="Contact Fridge" class="w-full h-full object-cover">
+   <!-- Contact Form -->
+<section id="contact" class="py-20 bg-gradient-to-r from-primary to-secondary">
+    <div class="container mx-auto px-6 lg:px-12">
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <div class="grid lg:grid-cols-2">
+                <div class="p-12 lg:p-16">
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
+                        Get Your Smart Machine Installed — <span class="gradient-text">100% Free</span>
+                    </h2>
+                    <p class="text-gray-600 mb-8 text-lg">
+                        Join 400+ locations across Canada. Fill out the form and we'll contact you within 24 hours.
+                    </p>
+                    
+                    <form action="https://formspree.io/f/xqawzayz" method="POST" class="space-y-5">
+                        <!-- Hidden fields for Formspree customization -->
+                        <input type="hidden" name="_redirect" value="/thankyou.html">
+                        <input type="text" name="_gotcha" style="display:none">
+                        
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Full Name*</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                        </div>
+                        
+                        <div>
+                            <label for="company" class="block text-gray-700 font-medium mb-2">Company/Building Name*</label>
+                            <input type="text" id="company" name="company" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email*</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone*</label>
+                            <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                        </div>
+                        
+                        <div>
+                            <label for="address" class="block text-gray-700 font-medium mb-2">Full Address*</label>
+                            <input type="text" id="address" name="address" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                        </div>
+                        
+                        <div>
+                            <label for="space" class="block text-gray-700 font-medium mb-2">Type of Space*</label>
+                            <select id="space" name="space" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                                <option value="">Select your space type</option>
+                                <option value="office">Office</option>
+                                <option value="apartment">Apartment/Condo</option>
+                                <option value="gym">Gym/Fitness Center</option>
+                                <option value="school">School/University</option>
+                                <option value="warehouse">Warehouse</option>
+                                <option value="hospital">Hospital</option>
+                                <option value="airport">Airport/Transit</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="employees" class="block text-gray-700 font-medium mb-2">Number of Employees/Residents</label>
+                            <input type="number" id="employees" name="employees" placeholder="Optional" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your space..." class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-gradient-to-r from-primary to-secondary hover:from-blue-600 hover:to-green-500 text-white font-semibold py-4 px-6 rounded-xl transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                            Request My Free Smart Fridge →
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="hidden lg:block relative bg-gradient-to-br from-blue-500 to-green-500 p-12">
+                    <div class="h-full flex flex-col justify-center text-white">
+                        <h3 class="text-3xl font-bold mb-6">Why Choose Grab-n-Go?</h3>
+                        <ul class="space-y-6">
+                            <li class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Zero Cost Setup</h4>
+                                    <p class="text-blue-100">We handle everything - installation, maintenance, restocking</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Fast Implementation</h4>
+                                    <p class="text-blue-100">From inquiry to installation in as little as 2 weeks</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Proven Track Record</h4>
+                                    <p class="text-blue-100">400+ locations, 99.5% satisfaction rate</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">24/7 Support</h4>
+                                    <p class="text-blue-100">Dedicated support team across Canada</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    </form>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
@@ -391,11 +456,7 @@
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <div class="flex space-x-4 mb-4 md:mb-0">
-                    <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
-                    <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
-                    <a href="#" class="text-gray-400 hover:text-white">Careers</a>
-                </div>
+    
                 <p class="text-gray-400">© 2025 Grab-n-Go AI. All rights reserved.</p>
             </div>
         </div>
