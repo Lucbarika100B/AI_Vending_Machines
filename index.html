@@ -394,31 +394,31 @@
 
                         <div>
                             <label for="name" class="block text-gray-700 font-medium mb-2 text-sm sm:text-base">Full Name*</label>
-                            <input type="text" id="name" name="name" required minlength="2" pattern=".*\S.*" title="Please enter your name."
+                            <input type="text" id="name" name="name" required minlength="2" placeholder="Full name" pattern=".*\S.*" title="Please enter your name."
                                 class="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition text-sm sm:text-base">
                         </div>
 
                         <div>
                             <label for="company" class="block text-gray-700 font-medium mb-2 text-sm sm:text-base">Company/Building Name*</label>
-                            <input type="text" id="company" name="company" required minlength="2" pattern=".*\S.*" title="Please enter company name."
+                            <input type="text" id="company" name="company" required minlength="2" placeholder="Company or building name" pattern=".*\S.*" title="Please enter company name."
                                 class="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition text-sm sm:text-base">
                         </div>
 
                         <div>
                             <label for="email" class="block text-gray-700 font-medium mb-2 text-sm sm:text-base">Email*</label>
-                            <input type="email" id="email" name="email" required title="Please enter a valid email."
+                            <input type="email" id="email" name="email" required placeholder="Email address" title="Please enter a valid email." 
                                 class="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition text-sm sm:text-base">
                         </div>
 
                         <div>
                             <label for="phone" class="block text-gray-700 font-medium mb-2 text-sm sm:text-base">Phone*</label>
-                            <input type="tel" id="phone" name="phone" required minlength="10" title="Please enter your phone number."
+                            <input type="tel" id="phone" name="phone" required minlength="10" placeholder="Phone number" title="Please enter your phone number."
                                 class="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition text-sm sm:text-base">
                         </div>
 
                         <div>
                             <label for="address" class="block text-gray-700 font-medium mb-2 text-sm sm:text-base">Full Address*</label>
-                            <input type="text" id="address" name="address" required minlength="10" title="Please enter your address."
+                            <input type="text" id="address" name="address" required minlength="10" placeholder="Full address with postal code" title="Please enter your address."
                                 class="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition text-sm sm:text-base">
                         </div>
 
@@ -440,13 +440,13 @@
 
                         <div>
                             <label for="employees" class="block text-gray-700 font-medium mb-2 text-sm sm:text-base">Number of Employees/Residents</label>
-                            <input type="number" id="employees" name="employees" min="1" placeholder="Optional"
+                            <input type="number" id="employees" name="employees" required min="1" placeholder="Number of people in your space"
                                 class="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition text-sm sm:text-base">
                         </div>
 
                         <div>
                             <label for="message" class="block text-gray-700 font-medium mb-2 text-sm sm:text-base">Message</label>
-                            <textarea id="message" name="message" rows="3" placeholder="Tell us about your space..."
+                            <textarea id="message" name="message" required rows="3" placeholder="Tell us about your space..."
                                 class="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition text-sm sm:text-base"></textarea>
                         </div>
 
