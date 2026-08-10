@@ -76,59 +76,53 @@
             <span class="hero-note">Montreal · Reply within one business day</span>
           </div>
         </div>
-        <div class="hero__visual">
-          <div class="render-slot" data-slot="render-hero-machine.webp">
-            <div class="render-slot__inner">
-              <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"
-                aria-hidden="true">
-                <rect x="5" y="2.5" width="14" height="19" rx="1.5" />
-                <line x1="12" y1="2.5" x2="12" y2="21.5" />
-                <line x1="7" y1="6" x2="10" y2="6" /><line x1="7" y1="9" x2="10" y2="9" />
-                <line x1="7" y1="12" x2="10" y2="12" /><line x1="14.5" y1="16" x2="16.5" y2="16" />
-              </svg>
-              <div class="label">Machine render — coming soon</div>
-              <div class="dims">1000 × 1333</div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <!-- Signature element: the attribution line -->
       <div class="wrap">
         <figure class="attrib" aria-label="Every withdrawal is attributed: badge, item, then name, date, time.">
           <figcaption class="attrib__label">The attribution line</figcaption>
-          <svg viewBox="0 0 920 210" role="img"
-            aria-label="A badge leads to an item, which leads to a record: name, date, time.">
-            <path class="a-rule" d="M130 150 V180 H755 V155 M460 145 V180" />
-            <circle cx="130" cy="180" r="5" fill="#2e5568" />
-            <circle cx="460" cy="180" r="5" fill="#2e5568" />
-            <circle cx="755" cy="180" r="5" fill="#2e5568" />
-            <path d="M300 92 l12 10 -12 10" fill="none" stroke="#9a9a9a" stroke-width="2" />
-            <path d="M600 92 l12 10 -12 10" fill="none" stroke="#9a9a9a" stroke-width="2" />
-            <g class="a-node n1">
-              <rect x="60" y="40" width="140" height="110" rx="8" fill="#fff" stroke="#0a0a0a" stroke-width="2" />
-              <line x1="112" y1="58" x2="148" y2="58" stroke="#0a0a0a" stroke-width="3" stroke-linecap="round" />
-              <circle cx="130" cy="92" r="14" fill="none" stroke="#0a0a0a" stroke-width="2" />
-              <path d="M108 132 a22 22 0 0 1 44 0" fill="none" stroke="#0a0a0a" stroke-width="2" />
-              <text x="130" y="178" text-anchor="middle" font-size="15" font-weight="600" fill="#0a0a0a" letter-spacing="1.5">BADGE</text>
-            </g>
-            <g class="a-node n2">
-              <rect x="392" y="48" width="136" height="96" rx="6" fill="#fff" stroke="#0a0a0a" stroke-width="2" />
-              <line x1="392" y1="82" x2="528" y2="82" stroke="#0a0a0a" stroke-width="2" />
-              <rect x="440" y="60" width="40" height="12" rx="2" fill="#2e5568" />
-              <text x="460" y="178" text-anchor="middle" font-size="15" font-weight="600" fill="#0a0a0a" letter-spacing="1.5">ITEM</text>
-            </g>
-            <g class="a-node n3">
-              <rect x="650" y="32" width="212" height="118" rx="8" fill="#fff" stroke="#0a0a0a" stroke-width="2" />
-              <rect x="670" y="52" width="10" height="10" fill="#2e5568" />
-              <text x="692" y="62" font-size="15" font-weight="600" fill="#0a0a0a" letter-spacing="1">NAME</text>
-              <rect x="670" y="86" width="10" height="10" fill="#2e5568" />
-              <text x="692" y="96" font-size="15" font-weight="600" fill="#0a0a0a" letter-spacing="1">DATE</text>
-              <rect x="670" y="120" width="10" height="10" fill="#2e5568" />
-              <text x="692" y="130" font-size="15" font-weight="600" fill="#0a0a0a" letter-spacing="1">TIME</text>
-              <text x="755" y="178" text-anchor="middle" font-size="15" font-weight="600" fill="#0a0a0a" letter-spacing="1.5">ATTRIBUTED</text>
-            </g>
-          </svg>
+          <ol class="attrib__nodes">
+            <li class="a-node">
+              <span class="a-node__art" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <rect x="9" y="6" width="30" height="36" rx="3" />
+                  <line x1="19" y1="6" x2="29" y2="6" stroke-width="3" stroke-linecap="round" class="accent" />
+                  <circle cx="24" cy="21" r="5" />
+                  <path d="M15 35a9 9 0 0 1 18 0" />
+                </svg>
+              </span>
+              <span class="a-node__rail" aria-hidden="true"><span class="a-node__dot"></span></span>
+              <span class="a-node__label">Badge</span>
+              <span class="a-node__desc">The employee identifies.</span>
+            </li>
+            <li class="a-node">
+              <span class="a-node__art" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <rect x="8" y="13" width="32" height="26" rx="2" />
+                  <line x1="8" y1="22" x2="40" y2="22" />
+                  <rect x="20" y="13" width="8" height="9" fill="currentColor" stroke="none" class="accent" />
+                </svg>
+              </span>
+              <span class="a-node__rail" aria-hidden="true"><span class="a-node__dot"></span></span>
+              <span class="a-node__label">Item</span>
+              <span class="a-node__desc">They take what they need.</span>
+            </li>
+            <li class="a-node">
+              <span class="a-node__art" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <rect x="7" y="9" width="34" height="30" rx="3" />
+                  <rect x="13" y="17" width="5" height="5" fill="currentColor" stroke="none" class="accent" />
+                  <line x1="22" y1="19.5" x2="35" y2="19.5" />
+                  <rect x="13" y="26" width="5" height="5" fill="currentColor" stroke="none" class="accent" />
+                  <line x1="22" y1="28.5" x2="35" y2="28.5" />
+                </svg>
+              </span>
+              <span class="a-node__rail" aria-hidden="true"><span class="a-node__dot"></span></span>
+              <span class="a-node__label">Attributed</span>
+              <span class="a-node__desc">Name, date, time — recorded.</span>
+            </li>
+          </ol>
         </figure>
       </div>
     </section>
@@ -157,11 +151,14 @@
             </div>
           </article>
           <article class="pillar">
-            <div class="render-slot" data-slot="render-pillar-retail.webp">
-              <div class="render-slot__inner">
-                <div class="label">Wrapped retail machine render — coming soon</div>
-                <div class="dims">1000 × 750</div>
-              </div>
+            <div class="tpanel">
+              <span class="tpanel__kicker">Full wrap</span>
+              <span class="tpanel__line">Your brand, from the front panel to the screen.</span>
+              <ul class="tpanel__list">
+                <li>Front and side panels wrapped</li>
+                <li>Screen and interface in your colours</li>
+                <li>Contactless payment built in</li>
+              </ul>
             </div>
             <div class="pillar__body">
               <p class="pillar__tag">Model B</p>
@@ -291,11 +288,23 @@
         <h2 class="h2">Every machine starts from your requirements, not a catalogue.</h2>
         <div class="custom-grid reveal-up">
           <div class="custom-tile">
-            <div class="render-slot" data-slot="render-custom-wrap.webp">
-              <div class="render-slot__inner">
-                <div class="label">Wrap render — coming soon</div>
-                <div class="dims">800 × 800</div>
-              </div>
+            <div class="miniframe" aria-hidden="true">
+              <svg viewBox="0 0 320 214" role="img" aria-label="Schematic of a machine wrapped in the client's brand.">
+                <rect width="320" height="214" fill="#fff" />
+                <rect x="86" y="18" width="148" height="180" rx="6" fill="#141414" />
+                <rect x="86" y="18" width="148" height="34" rx="6" fill="#2e5568" />
+                <rect x="86" y="44" width="148" height="8" fill="#2e5568" />
+                <rect x="102" y="28" width="60" height="11" rx="2" fill="#ffffff" opacity=".92" />
+                <rect x="168" y="28" width="20" height="11" rx="2" fill="#4d7f97" />
+                <rect x="96" y="62" width="104" height="124" rx="3" fill="#f2f4f5" />
+                <line x1="96" y1="94" x2="200" y2="94" stroke="#cfd6d9" stroke-width="2" />
+                <line x1="96" y1="126" x2="200" y2="126" stroke="#cfd6d9" stroke-width="2" />
+                <line x1="96" y1="158" x2="200" y2="158" stroke="#cfd6d9" stroke-width="2" />
+                <rect x="208" y="62" width="18" height="124" rx="3" fill="#1e1e1e" />
+                <rect x="212" y="68" width="10" height="14" rx="2" fill="#4d7f97" />
+                <rect x="212" y="88" width="10" height="4" rx="1" fill="#5b6d76" />
+                <rect x="212" y="96" width="10" height="4" rx="1" fill="#5b6d76" />
+              </svg>
             </div>
             <span class="mark">01</span>
             <span class="tile-label">Full wrap in your brand</span>
@@ -353,27 +362,35 @@
       <div class="wrap">
         <p class="eyebrow">Designed to order</p>
         <p style="color:#ededed;font-family:var(--font-display);font-weight:400;font-size:clamp(1.15rem,2.4vw,1.7rem);line-height:1.4;max-width:52ch">
-          For a private aviation operator, we designed a two-machine system: a dedicated
-          wine-and-champagne unit with locked bottle-by-bottle delivery, and a self-serve unit for snacks
-          and beverages — every withdrawal attributed to the employee, across three bases, in one dashboard.
+          Every system is designed for one client. Access type, shelving, temperature, wrap and
+          software — all configured for your operation. A system can combine several machines: a secure
+          controlled-delivery unit for fragile products, a self-serve unit for everything else, all in
+          one dashboard.
         </p>
-        <p class="lede" style="margin-top:1.6rem">
-          For a baby-essentials retail concept, a machine fully wrapped in the client's brand,
-          ready for shopping malls.
-        </p>
-        <div class="case-visuals reveal-up">
-          <div class="render-slot" data-slot="render-case-aviation.webp">
-            <div class="render-slot__inner">
-              <div class="label">Render — bottle unit (aviation)</div>
-              <div class="dims">900 × 1125</div>
-            </div>
+        <div class="sysmap reveal-up">
+          <div class="sysmap__unit">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <rect x="11" y="5" width="26" height="38" rx="3" />
+              <rect x="16" y="12" width="16" height="12" rx="1.5" />
+              <circle cx="24" cy="32" r="4" />
+              <path d="M21 32v-3a3 3 0 0 1 6 0v3" />
+            </svg>
+            <span class="sysmap__tag">Unit 1</span>
+            <span class="sysmap__name">Controlled delivery</span>
+            <span class="sysmap__note">For fragile products: items are delivered one at a time and the door stays locked.</span>
           </div>
-          <div class="render-slot" data-slot="render-case-retail.webp">
-            <div class="render-slot__inner">
-              <div class="label">Render — wrapped retail machine</div>
-              <div class="dims">900 × 1125</div>
-            </div>
+          <div class="sysmap__unit">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <rect x="11" y="5" width="26" height="38" rx="3" />
+              <line x1="11" y1="18" x2="37" y2="18" />
+              <line x1="11" y1="30" x2="37" y2="30" />
+              <path d="M30 36h4" stroke-linecap="round" />
+            </svg>
+            <span class="sysmap__tag">Unit 2</span>
+            <span class="sysmap__name">Self-serve</span>
+            <span class="sysmap__note">For everything else: the door opens, several items, in any order.</span>
           </div>
+          <p class="sysmap__join">One dashboard</p>
         </div>
       </div>
     </section>

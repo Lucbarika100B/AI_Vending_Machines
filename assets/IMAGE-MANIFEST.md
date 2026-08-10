@@ -8,20 +8,33 @@ with explicit width/height to avoid layout shift.
 
 ---
 
-## ⬛ RENDER SLOTS — awaiting the owner's AI-generated brand machine renders
+## ⬛ RENDER TARGETS — internal note only, NOT rendered on the page
 
-These are the ONLY placeholders. Each is a styled brand-toned block with a label.
-Drop a real render at the path below, at (or above) the pixel size given, then
-remove the `data-slot` attribute / replace the `.render-slot` block with an
-`<img>`. Export at 2× the display size for retina.
+**All five on-page render placeholders were removed (2026-08-10).** Nothing on the
+live site now says "coming soon", shows pixel dimensions, or draws a dashed empty
+box. Each former slot was rebuilt around a visual we actually own — see the table
+below for what replaced it.
 
-| Slot | Where | File to supply | Export size (px) | Aspect |
-|------|-------|----------------|------------------|--------|
-| Hero machine | Hero, right column | `assets/render-hero-machine.webp` | **1000 × 1333** | 3:4 portrait |
-| Retail machine (Pillar B) | "Vente au détail" card | `assets/render-pillar-retail.webp` | **1000 × 750** | 4:3 |
-| Wrap / branding | Customization tile 1 | `assets/render-custom-wrap.webp` | **800 × 800** | 1:1 |
-| Aviation bottle unit | Capability case, left | `assets/render-case-aviation.webp` | **900 × 1125** | 4:5 portrait |
-| Branded retail machine | Capability case, right | `assets/render-case-retail.webp` | **900 × 1125** | 4:5 portrait |
+This table is kept **only** as a spec for when real machine renders are generated.
+To use one: drop the file in `/assets`, export at 2× for retina, and swap the
+listed component for an `<img>` with `srcset`.
+
+| Former slot | Where | Replaced on the page by | If a real render is made | Export size |
+|-------------|-------|-------------------------|--------------------------|-------------|
+| Hero machine | Hero, right column | **Column removed.** Hero is now single-column and text-forward; the rebuilt attribution line below is its visual anchor. | `assets/render-hero-machine.webp` | 1000 × 1333 (3:4) |
+| Retail machine | Pillar B card | **`.tpanel`** — typographic brand panel ("Votre marque, de la façade à l'écran" / "Your brand, from the front panel to the screen") | `assets/render-pillar-retail.webp` | 1000 × 750 (4:3) |
+| Wrap / branding | Customization tile 01 | **`.miniframe`** — code-drawn schematic machine elevation with an accent wrap band, matching tile 04's software mock | `assets/render-custom-wrap.webp` | 800 × 800 (1:1) |
+| Bottle unit | Capability case, left | **`.sysmap`** — code-built "two units, one dashboard" schematic (replaces both case slots) | `assets/render-case-bottle.webp` | 900 × 1125 (4:5) |
+| Branded retail machine | Capability case, right | *(same `.sysmap` component)* | `assets/render-case-retail.webp` | 900 × 1125 (4:5) |
+
+> **Why not photographs?** Only two genuinely-owned machine images exist —
+> `door-open.jpg` (→ `step-take`) and `grab-close.jpg` (→ `custom-access`) — and
+> both are already placed on the page. Every other machine image in `/assets` and
+> in git history is a third-party supplier marketing render (see the audit below);
+> `MicroMarket.jpg` is a **365 Retail Markets** render covered in third-party
+> product logos, and `many-doors.jpg` is only 350 × 203. There was no owned photo
+> available to fill these slots, so they were rebuilt as code/typographic visuals
+> rather than filled with vendor imagery.
 
 ---
 

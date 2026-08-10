@@ -25,10 +25,6 @@
   /* --------------------- Attribution line reveal ------------------------ */
   var attrib = document.querySelector(".attrib");
   if (attrib) {
-    var rule = attrib.querySelector(".a-rule");
-    if (rule && rule.getTotalLength) {
-      try { attrib.style.setProperty("--len", Math.ceil(rule.getTotalLength())); } catch (e) {}
-    }
     if (reduce || !hasIO) {
       attrib.classList.add("reveal");
     } else {
