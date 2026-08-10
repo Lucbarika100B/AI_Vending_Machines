@@ -21,7 +21,7 @@ listed component for an `<img>` with `srcset`.
 
 | Former slot | Where | Replaced on the page by | If a real render is made | Export size |
 |-------------|-------|-------------------------|--------------------------|-------------|
-| Hero machine | Hero, right column | **Column removed.** Hero is now single-column and text-forward; the rebuilt attribution line below is its visual anchor. | `assets/render-hero-machine.webp` | 1000 × 1333 (3:4) |
+| Hero machine | Hero, right column | ✅ **FILLED** — `hero-machine-900.webp` (see below) | *done* | 900 × 1200 (3:4) |
 | Retail machine | Pillar B card | **`.tpanel`** — typographic brand panel ("Votre marque, de la façade à l'écran" / "Your brand, from the front panel to the screen") | `assets/render-pillar-retail.webp` | 1000 × 750 (4:3) |
 | Wrap / branding | Customization tile 01 | **`.miniframe`** — code-drawn schematic machine elevation with an accent wrap band, matching tile 04's software mock | `assets/render-custom-wrap.webp` | 800 × 800 (1:1) |
 | Bottle unit | Capability case, left | **`.sysmap`** — code-built "two units, one dashboard" schematic (replaces both case slots) | `assets/render-case-bottle.webp` | 900 × 1125 (4:5) |
@@ -35,6 +35,28 @@ listed component for an `<img>` with `srcset`.
 > product logos, and `many-doors.jpg` is only 350 × 203. There was no owned photo
 > available to fill these slots, so they were rebuilt as code/typographic visuals
 > rather than filled with vendor imagery.
+
+---
+
+## 🟩 AI-GENERATED BRAND RENDER — owner-commissioned (2026-08-10)
+
+| Output (base) | Widths | Used in | Provenance |
+|---------------|--------|---------|-----------|
+| `hero-machine` | 600, 900 | Hero, right column | **AI-generated render**, commissioned by the owner to the owner's own prompt. Not a photograph and not a supplier asset. |
+
+Generated 4 candidates; picked the one with the lightest background so it sits
+cleanly against the white hero. **Checked at 2× zoom for hallucinated lettering
+before use** — screen is blank, shelf price rails carry no characters, products
+are unmarked, base is clean. The only marking anywhere is the universal EMV
+contactless symbol on the card reader, which is a generic international standard,
+not a vendor identifier. One rejected candidate had garbled digits on the shelf
+rails.
+
+Source PNG was 1856 × 2304. Cropped to 3:4 on the machine's detected bounding box
+with balanced margins (L231/R230, T127/B127 px), then resized. 57 KB at 900w.
+
+> Because it is a render rather than a photograph, the `alt` text describes the
+> machine without asserting it is an installed unit.
 
 ---
 
