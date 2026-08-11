@@ -1,7 +1,7 @@
 /* ==========================================================================
    Grab-n-Go AI — grab2goshop.ca
    Industrial-precision brand: black on white, one restrained steel accent.
-   Bespoke stylesheet (no framework). Shared by FR (/) and EN (/en/).
+   Bespoke stylesheet (no framework). Shared by EN (/) and FR (/fr/).
    ========================================================================== */
 
 /* ------------------------- Self-hosted fonts ---------------------------- */
@@ -398,6 +398,31 @@ p { margin: 0; }
 .no-js .a-node__rail::before, .no-js .a-node__rail::after { transform: none; }
 .no-js .a-node__dot, .no-js .a-node__art,
 .no-js .a-node__label, .no-js .a-node__desc { opacity: 1; transform: none; }
+
+/* --------------------------- Any-context band --------------------------- */
+.anyband {
+  background: #f2f6f7;
+  border-top: 3px solid var(--accent);
+  border-bottom: 1px solid var(--line);
+  padding-block: clamp(46px, 6vw, 76px);
+}
+.anyband__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, 1fr);
+  gap: clamp(1.4rem, 4vw, 3.4rem);
+  align-items: start;
+}
+@media (max-width: 860px) { .anyband__grid { grid-template-columns: 1fr; } }
+.anyband .eyebrow { margin-bottom: .9rem; }
+.anyband__title { font-size: clamp(1.7rem, 3.6vw, 2.5rem); max-width: 16ch; }
+.anyband__body {
+  color: var(--ink-2);
+  font-size: clamp(1rem, 1.4vw, 1.12rem);
+  max-width: 60ch;
+  border-left: 2px solid var(--accent);
+  padding-left: clamp(1rem, 2vw, 1.6rem);
+}
+@media (max-width: 860px) { .anyband__body { border-left: 0; padding-left: 0; } }
 
 /* ------------------------------ Pillars --------------------------------- */
 .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem, 3vw, 2rem); margin-top: 2.5rem; }
