@@ -50,6 +50,43 @@
     revealEls.forEach(function (el) { rio.observe(el); });
   }
 
+  /* --------------------------- Hero video player ------------------------ */
+  /* Play/pause only. No native control bar, no seeking, no volume, no
+     download or picture-in-picture. Under reduced motion the poster stands in
+     for the video and playback is not offered.
+     DORMANT: no page ships a [data-vplayer] yet — see the note in site.css. */
+  var vp = document.querySelector("[data-vplayer]");
+  if (vp) {
+    var vid = vp.querySelector("video");
+    var btn = vp.querySelector("[data-vplay]");
+    if (vid && btn) {
+      if (reduce) {
+        btn.remove();
+      } else {
+        var sync = function () {
+          var playing = !vid.paused && !vid.ended;
+          vp.classList.toggle("is-playing", playing);
+          btn.setAttribute("aria-pressed", playing ? "true" : "false");
+        };
+        btn.addEventListener("click", function () {
+          if (vid.paused || vid.ended) {
+            var p = vid.play();
+            if (p && p.catch) { p.catch(function () { /* autoplay policy — ignore */ }); }
+          } else {
+            vid.pause();
+          }
+        });
+        vid.addEventListener("play", sync);
+        vid.addEventListener("pause", sync);
+        vid.addEventListener("ended", function () {
+          vid.currentTime = 0;   /* back to the first frame, not a black end frame */
+          sync();
+        });
+      }
+      vid.addEventListener("contextmenu", function (e) { e.preventDefault(); });
+    }
+  }
+
   /* ------------------------------ Lightbox ------------------------------ */
   var items = [].slice.call(document.querySelectorAll(".gallery-item"));
   var lb = document.querySelector(".lightbox");
