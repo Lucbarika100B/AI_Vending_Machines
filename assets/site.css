@@ -376,6 +376,11 @@ p { margin: 0; }
 }
 
 .hero .lede { margin-top: 1.6rem; }
+/* The any-industry phrase carries the positioning, so it is lifted out of the
+   body colour. Weight is pinned to 600 because Inter ships 400/500/600 only —
+   the default <strong> 700 would be synthesised by the browser. Scoped to the
+   hero: on .section--panel the lede sits on dark, where --accent would sink. */
+.hero .lede strong { color: var(--accent); font-weight: 600; }
 .hero-cta { margin-top: 2.2rem; display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
 .hero-note { font-size: .9rem; color: var(--ink-3); }
 
