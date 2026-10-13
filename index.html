@@ -27,6 +27,15 @@
   <link rel="preload" href="assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/site.css">
+
+  <!-- Zoho Forms — inline embed (replaces Formspree, 2026-10-13). Self-contained. -->
+  <style>
+    .zf-inline{background:#fff;border-radius:12px;overflow:hidden;position:relative;min-height:820px;box-shadow:0 10px 40px rgba(0,0,0,.35)}
+    .zf-inline iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+    .zf-inline__fallback{position:absolute;inset:0;display:grid;place-items:center;padding:2rem;text-align:center;color:#333;font-size:.98rem;line-height:1.5}
+    .zf-inline.is-ready .zf-inline__fallback{display:none}
+    @media (max-width:760px){.zf-inline{min-height:900px}}
+  </style>
 </head>
 
 <body>
@@ -542,59 +551,20 @@
             Reply within one business day.
           </p>
           <p class="lede" style="font-size:1rem">
-            <a href="mailto:sales.vending.machine.ai@gmail.com" style="border-bottom:1px solid var(--accent-hi)">sales.vending.machine.ai@gmail.com</a>
+            <a href="mailto:hello@grab2goshop.ca" style="border-bottom:1px solid var(--accent-hi)">hello@grab2goshop.ca</a>
           </p>
         </div>
 
-        <form class="form"
-          action="https://formspree.io/f/xqawzayz"
-          method="POST">
-          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <input type="hidden" name="_next" value="https://www.grab2goshop.ca/thankyou.html">
-          <input type="hidden" name="_subject" value="New request — Grab-n-Go AI (EN)">
-          <input type="hidden" name="language" value="en">
-
-          <div class="field">
-            <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
-            <input type="text" id="name" name="name" required minlength="2" pattern=".*\S.*"
-              autocomplete="name" placeholder="Your name">
+        <!-- Zoho Forms — the request form, embedded inline.
+             Replace ZOHO_FORM_EMBED_URL_HERE with the iframe src from Zoho Forms → Share → Embed. -->
+        <div class="zf-inline" id="zf-inline">
+          <div class="zf-inline__fallback">
+            <p>The request form is loading.<br>If it does not appear, write to
+              <a href="mailto:hello@grab2goshop.ca">hello@grab2goshop.ca</a>.</p>
           </div>
-          <div class="field">
-            <label for="company">Company <span class="req" aria-hidden="true">*</span></label>
-            <input type="text" id="company" name="company" required minlength="2" pattern=".*\S.*"
-              autocomplete="organization" placeholder="Company name">
-          </div>
-          <div class="form-row">
-            <div class="field">
-              <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
-              <input type="email" id="email" name="email" required autocomplete="email"
-                placeholder="you@company.com">
-            </div>
-            <div class="field">
-              <label for="city">City</label>
-              <input type="text" id="city" name="city" autocomplete="address-level2" placeholder="City">
-            </div>
-          </div>
-          <div class="field">
-            <label for="operation">Type of operation <span class="req" aria-hidden="true">*</span></label>
-            <select id="operation" name="operation" required>
-              <option value="">Select…</option>
-              <option value="plant-warehouse">Plant or warehouse</option>
-              <option value="dealership-shop">Dealership or shop</option>
-              <option value="construction-contractor">Construction / contractor</option>
-              <option value="aviation-fleet">Aviation or fleet</option>
-              <option value="retail">Retail</option>
-              <option value="office-residence">Office or residence</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4"
-              placeholder="Describe your operation in a few lines."></textarea>
-          </div>
-          <button type="submit" class="btn">Book 20 minutes <span class="arrow" aria-hidden="true">→</span></button>
-        </form>
+          <iframe id="zf-frame" title="Grab-n-Go AI request form"
+            src="https://forms.zohopublic.ca/infograb21/form/GrabNGoAIDemandedemachineMachinerequest/formperma/k1IMRo35cyvW-WAftJj4J58DVxNGF2OhDU3BIyNg3CI" loading="lazy" allow="clipboard-write"></iframe>
+        </div>
       </div>
     </section>
   </main>
@@ -608,7 +578,7 @@
           <p style="margin-top:.6rem;color:#9a9a9a;font-size:.95rem">Montreal</p>
         </div>
         <div class="footer-meta">
-          <a href="mailto:sales.vending.machine.ai@gmail.com">sales.vending.machine.ai@gmail.com</a>
+          <a href="mailto:hello@grab2goshop.ca">hello@grab2goshop.ca</a>
           <span class="sep" aria-hidden="true">·</span>
           <span class="footer-lang">
             <a href="/fr/" hreflang="fr-ca">FR</a>
@@ -630,6 +600,15 @@
   </div>
 
   <script src="assets/site.js" defer></script>
+
+  <script>
+  (function () {
+    var f = document.getElementById('zf-frame'), box = document.getElementById('zf-inline');
+    if (!f || !box) return;
+    if (f.getAttribute('src').indexOf('http') !== 0) { f.remove(); return; } // URL not set yet: fallback text stays visible
+    f.addEventListener('load', function () { box.classList.add('is-ready'); });
+  })();
+  </script>
 </body>
 
 </html>
